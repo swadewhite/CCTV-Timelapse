@@ -71,7 +71,7 @@ printf "file '%s'\n" *.mkv > concat.txt
 # Concatenate all the videos using ffmpeg.
 ffmpeg -f concat -safe 0 -i concat.txt -c copy "$(date --date="1 day ago" +'%m-%d-%Y') Camera 3.mp4"
 
-# Uploads the converted clips to YouTube.
+# Uploads the converted clips to YouTube using youtube-upload.
 sudo youtube-upload --title="$(date --date="1 day ago" +'%m-%d-%Y') Camera 1" --description="A time lapse of Cedar Point's Webcam #1 sped up by 50x." --client-secrets="/home/swade/client_secrets.json" "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam1/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$(date --date="1 day ago" +'%m-%d-%Y') Camera 1.mp4"
 sudo youtube-upload --title="$(date --date="1 day ago" +'%m-%d-%Y') Camera 2" --description="A time lapse of Cedar Point's Webcam #2 sped up by 50x." --client-secrets="/home/swade/client_secrets.json" "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam2/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$(date --date="1 day ago" +'%m-%d-%Y') Camera 2.mp4"
 sudo youtube-upload --title="$(date --date="1 day ago" +'%m-%d-%Y') Camera 3" --description="A time lapse of Cedar Point's Webcam #3 sped up by 50x." --client-secrets="/home/swade/client_secrets.json" "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam3/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$(date --date="1 day ago" +'%m-%d-%Y') Camera 3.mp4"
