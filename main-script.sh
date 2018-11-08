@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set this script as a crontab to run a little after midnight, just so ffmpeg has time to precess the videos.
+# Set this script as a crontab to run a little after midnight, just so ffmpeg has time to process the videos.
 
 # Create a new folder with a date stamp.
 mkdir "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam1/$(date --date="1 day ago" +'%Y-%m-%d')"

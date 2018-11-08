@@ -4,7 +4,7 @@ A collection of scripts I made to import 3 remote CCTV cameras, encode it, conve
 2) Save it in the .mkv format in hour segments to a SMB shared hard drive.
 3) Create a date-stamped folder 10 minutes after midnight.
 4) Move the footage from the previous day into that new folder.
-5) Speed up all clips in the folder by 50x.
+5) Speed up all clips in the folder by 100x.
 6) Concatenate all clips into one .mp4 file.
 7) Upload the 3 finished .mp4 files to YouTube.
 8) Convert all past recorded footage to H.265.
