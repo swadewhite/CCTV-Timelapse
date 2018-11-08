@@ -7,3 +7,5 @@ A collection of scripts I made to import 3 remote CCTV cameras, encode it, conve
 5) Speed up all clips in the folder by 50x.
 6) Concatenate all clips into one .mp4 file.
 7) Upload the 3 finished .mp4 files to YouTube.
+8) Convert all past recorded footage to H.265.
+9) Deleted old .mkv files.

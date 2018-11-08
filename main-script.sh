@@ -20,7 +20,7 @@ find "/home/swade/CCTV_Footage/Cedar_Point/Cam3/Cam3_"*$(date --date="1 day ago"
 # Change directory to camera 1 footage.
 cd "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam1/$(date --date="1 day ago" +'%Y-%m-%d')"
 
-# Use Handbrake to speed up videos by 100 times.
+# Use FFmpeg to speed up videos by 100 times.
 for FILE in *.mkv; do
   VIDEO_NAME="${FILE%.*}"
   ffmpeg -i $FILE -vf "setpts=.025*PTS" -r 60 -an "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam1/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$VIDEO_NAME-faster.mkv"
@@ -29,7 +29,7 @@ done
 # Change directory to camera 2 footage.
 cd "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam2/$(date --date="1 day ago" +'%Y-%m-%d')"
 
-# Use Handbrake to speed up videos by 100 times.
+# Use FFmpeg to speed up videos by 100 times.
 for FILE in *.mkv; do
   VIDEO_NAME="${FILE%.*}"
   ffmpeg -i $FILE -vf "setpts=.025*PTS" -r 60 -an "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam2/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$VIDEO_NAME-faster.mkv"
@@ -38,7 +38,7 @@ done
 # Change directory to camera 3 footage.
 cd "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam3/$(date --date="1 day ago" +'%Y-%m-%d')"
 
-# Use Handbrake to speed up videos by 100 times.
+# Use FFmpeg to speed up videos by 100 times.
 for FILE in *.mkv; do
   VIDEO_NAME="${FILE%.*}"
   ffmpeg -i $FILE -vf "setpts=.025*PTS" -r 60 -an "/mnt/Backups/CCTV_Footage/Cedar_Point/Cam3/$(date --date="1 day ago" +'%Y-%m-%d')/Converted/$VIDEO_NAME-faster.mkv"
