@@ -11,7 +11,7 @@
 L_PATH=/home/swade/CCTV_Footage/Cedar_Point #Path to where the local files will be stored.
 S_PATH=/mnt/Backups/CCTV_Footage/Cedar_Point #Path to the NAS where the files will be moved. (If not using a NAS, just set this path to the same as L_PATH)
 SPEED=.025 #Sets the speed the video will be sped up by (.025=100x)
-YT_CRED= #Sets the path for the youtube-download credentials.
+YT_CRED= #Sets the path for the youtube-upload credentials.
 
 # Create a new folder with a date stamp.
 mkdir "$S_PATH/Cam1/$(date --date="1 day ago" +'%Y-%m-%d')"

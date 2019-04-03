@@ -2,8 +2,6 @@
 
 # Here is where you put all the ffmpeg/cctv streams. Make this script run every hour in crontab (It didn't run reliably when run continuously).
 
-# Let's set the variables (yay!)
-
 STREAM1=https://56cf3370d8dd3.streamlock.net:1935/live/cedar1.stream/playlist.m3u8 #URL of the first stream.
 STREAM2=https://56cf3370d8dd3.streamlock.net:1935/live/cedar2.stream/playlist.m3u8 #URL of the second stream.
 STREAM3=https://56cf3370d8dd3.streamlock.net:1935/live/cedar3.stream/playlist.m3u8 #URL of the third stream.
